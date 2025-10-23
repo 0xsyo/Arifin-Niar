@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 
-<!--[if gt IE 8]><!-->
 <!DOCTYPE html>
 
 <!--[if gt IE 8]><!-->
@@ -139,7 +137,7 @@ var context = new AudioContext();
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Engagement&family=Playfair+Display:wght@400;500&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
 
 
     
@@ -147,7 +145,7 @@ var context = new AudioContext();
     /* START DEFAULT */
     h1,
     h2, h4, h5, h6, figure {
-                font-family: 'Rochester', cursive;
+                font-family: 'Italianno', cursive;
             }
 
     h3,
@@ -732,7 +730,7 @@ fill: #fff !important;
 #nm-acara-fun-h1-d3,#savedate-fun-h1-id1,#our-gallery-id3,#titip-hadiah-tem2,#kehadiran_text,#aca-fun-h1-id1,#aca-fun-h1-id12,#our-gallery-id2, #our-gallery-id1, #our-gallery-id4,.acara-eg{
 font-size: 40px !important;
 font-weight: bold;
-color: #ae814c;
+color: #ffffff;
 }
 </style>
     <style>
@@ -2847,35 +2845,52 @@ color: #ae814c;
                         <br>
                         <br>
                                                 <div style="height: 20px"></div>
+												<audio id="backgroundMusic" loop>
+  <source src="https://sin1.contabostorage.com/2db3bf1e16cd47a08843bb881e39cce7:indoinvite-staging/indoinvite-staging/indoinvite-staging/nikah/upload/music/1741747192.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('backgroundMusic');
+    
+    // Coba putar audio saat halaman dimuat
+    audio.play().catch(function(error) {
+      console.log('Autoplay diblokir:', error);
+      // Jika autoplay diblokir, coba putar setelah interaksi pengguna
+      document.addEventListener('click', function playOnInteraction() {
+        audio.play().then(() => {
+          console.log('Audio diputar setelah interaksi pengguna');
+          // Hapus event listener setelah audio berhasil diputar
+          document.removeEventListener('click', playOnInteraction);
+        }).catch(err => console.log('Gagal memutar audio:', err));
+      }, { once: true });
+    });
+  });
+</script>
 <div id="c-data-pria-id">
-
-
-        <div id="fun-div-id31" class="col-md-12 box-pengantin shadow">
+  <div id="fun-div-id31" class="col-md-12 box-pengantin shadow" style="position: relative; z-index: 10;">
     <div id="fun-div-id32" class="circle-rela foto_pria_cli">
-        <img id="fun-img-id2" data-aos="fade-up" src="https://sin1.contabostorage.com/2db3bf1e16cd47a08843bb881e39cce7:indoinvite-staging/indoinvite-staging/indoinvite-staging/nikah/theme/images/1659166777.jpeg"
-            style="width: 150px;margin: 0 auto; pointer-events: auto;" class="img-responsive circle-img img-rela">
+      <img id="fun-img-id2" data-aos="fade-up" src="https://sin1.contabostorage.com/2db3bf1e16cd47a08843bb881e39cce7:indoinvite-staging/indoinvite-staging/indoinvite-staging/nikah/theme/images/1659166777.jpeg"
+        style="width: 150px; margin: 0 auto; pointer-events: auto;" class="img-responsive circle-img img-rela">
     </div>
-
     <br>
-    <div class="data_pria_cli">
-        <h1 id="namaPria" style="font-size:25px;">Arifin</h1>
-        <div class="detail-pengantin" data-aos="fade-right">
-            <p class="fun-p-184">Anak Ke-4 dari Pasangan</p>
-            <p class="fun-p-185">Alm. Bapak Amat &amp; Ibu Ramah</p>
-            <p class="fun-p-187 fun-p-186">Kp. Kukupu RT 03 RW 09<br>Cibadak Tanah Sareal<br>Kota Bogor</p>
-        </div>
-                <a data-aos="fade-up" style="position: relative; display: flex; margin: 0 auto; color: #fff;
-            justify-content: center; background: #ae814c; align-content: center; align-items: center; width: fit-content; padding: 5px 10px;
-            border-radius: 5px; font-size: 12px; margin-top: 10px;" href="https://instagram.com/0xsya">
-            <svg style="margin-right: 5px" xmlns="http://www.w3.org/2000/svg" height="16" width="14"
-                viewBox="0 0 448 512">
-                <!--!Font Awesome Free 6.5.1 by @fontawesome  - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                <path fill="#ffffff"
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-            </svg> 0xsya</a>
-            </div>
+    <div class="data_pria_cli" style="position: relative; z-index: 10;">
+      <h1 id="namaPria" style="font-size: 25px;">Arifin</h1>
+      <div class="detail-pengantin" data-aos="fade-right">
+        <p class="fun-p-184">Anak Ke-4 dari Pasangan</p>
+        <p class="fun-p-185">Alm. Bapak Amat &amp; Ibu Ramah</p>
+        <p class="fun-p-187 fun-p-186">Kp. Kukupu RT 03 RW 09<br>Cibadak Tanah Sareal<br>Kota Bogor</p>
+      </div>
+      <a data-aos="fade-up" style="position: relative; z-index: 1000; display: flex; margin: 0 auto; color: #fff; justify-content: center; background: #ae814c; align-content: center; align-items: center; width: fit-content; padding: 5px 10px; border-radius: 5px; font-size: 12px; margin-top: 10px;" 
+         href="https://www.instagram.com/0xsya/" target="_blank" rel="noopener noreferrer">
+        <svg style="margin-right: 5px" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+          <path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+        </svg> 0xsya
+      </a>
+    </div>
+  </div>
 </div>
-<br>    </div>
 
 
 
@@ -2909,7 +2924,7 @@ color: #ae814c;
                 <a data-aos="fade-up" style="position: relative; display: flex; margin: 0 auto; color: #fff;
                     justify-content: center; background: #ae814c; align-content: center; align-items: center; width: fit-content; padding: 5px 10px;
                     border-radius: 5px; font-size: 12px; margin-top: 10px;"
-            href="https://instagram.com/niarsjlanaaa_">
+            href="https://instagram.com/niarsjlanaaa_" target="_blank" rel="noopener noreferrer">
             <svg style="margin-right: 5px" xmlns="http://www.w3.org/2000/svg" height="16" width="14"
                 viewBox="0 0 448 512">
                 <!--!Font Awesome Free 6.5.1 by @fontawesome  - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
@@ -3153,107 +3168,7 @@ color: #ae814c;
                         
                     </div>
                 </div>
-            </div>
-
-            
-
-            
-            <footer id="fh5co-footer" role="contentinfo">
-                <div id="fun-div-id64" class="container">
-                    <!-- Modal -->
-  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
-   <div class="modal-dialog" role="document">
-     <div class="modal-content">
-       <!--<div class="modal-header">-->
-       <!--  <h5 class="modal-title" id="exampleModalLabel">Beri Hadiah</h5>-->
-       <!--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-           <!--<span aria-hidden="true">&times;</span>-->
-       <!--  </button>-->
-       <!--</div>-->
-       <div class="modal-body">
-           <div>
-                 <h4 style="text-align: center;">Konfirmasi Kehadiran Ke Mempelai</h4>
-                 <br>
-                 <img src="https://sin1.contabostorage.com/2db3bf1e16cd47a08843bb881e39cce7:indoinvite-staging/indoinvite-staging/indoinvite-staging/nikah/theme/images/1660743222.jpeg" alt="groom" class="img-responsive" style="border-radius: 50%;width: 125px;margin: 0 auto;">
-                 <form method="POST" action="" id="form-konfir">
-                     <input type="hidden" name="_token" value="CxT2D6kRpSreqAaoRcZGT2WBtsNSIBK5s1PYodw8">                    <div class="form-group col-md-12">
-                        <label>Nama</label>
-                        <input required name="nama" id="konfir_nama" class="form-control">
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label>Nomor Whatsapp Aktif (Contoh: 087888333555)</label>
-                        <input type="number" required name="no_wa" id="konfir_wa" class="form-control">
-                        <div style="display:none" id="notif_wa">
-                            <p style="color:red !important">Nomor Wa Tidak Aktif!</p>
-                        </div>
-                        <div style="text-align: center; display:none" id="belumisi">
-                            <p style="color:red !important">Isi semua data!</p>
-                         </div>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label>Ucapan</label>
-                        <textarea name="ucapan" class="form-control" id="ucapan" style="height: 120px">Selamat atas pernikahannyaa...</textarea>
-                    </div>
-                 </form>
-                 <br>
-                 <button type="submit" id="tombol_kirim" onclick="konfir()" style="margin: 0 auto;width: 100%;" href="https://saweria.co/funeventorganiser" class="btn btn-primary" target="_BLANK">Saya Hadir</button>
-                 <div style="text-align: center; display:none" id="notif_kirim">
-                    <i>mengirim data . . .</i>
-                 </div>
-
-                 <br>
-                 <br>
-                 <p style="margin: 0 auto;text-align: center;" data-dismiss="modal" onclick="belum()">Belum Bisa Hadir</p>
-                 <br>
-
-         </div>
-       </div>
-       <!--<div class="modal-footer">-->
-       <!--  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-       <!--  <button type="button" class="btn btn-primary">Save changes</button>-->
-       <!--</div>-->
-     </div>
-   </div>
- </div>
-
-
- 
-
- <!--MODAL-->
-                    
-                    <div class="row copyright">
-    <div class="col-md-12 text-center">
-                        
-            <div id="watermark-indo" class="watermark_footer_cli" style="padding: 50px 0 100px 0;flex-wrap:wrap;align-items:center;">
-        <div class="watermark-detail">
-                                    <div style="width: 100px; margin: 0 auto;">
-                    <div style="display: flex;width:100%;gap:10px;">
-                        <a id="ig-foot" href="https://instagram.com/indoinvite" target="_blank">
-                            <img src="https://indoinvite.com/nikah/ig.svg" style="width: 50px;" alt="">
-                        </a>
-                        <a id="tiktok-foot" href="https://www.tiktok.com/@indoinviteofficial/" target="_blank">
-                            <img src="https://indoinvite.com/nikah/tiktok_idnvt.webp" style="width: 42px; padding-top:4px; " alt="">
-                        </a>
-                    </div>
-                </div>
-                <div style="clear:both"></div>
-                <div style="width:100%;margin:10px auto;">
-                <a id="link-foot" style="color: #fff;background-color: #00458b;padding: 5px 20px;border-radius: 5px;" href="https://indoinvite.com">Indoinvite.com</a>
-                </div>
-            
-                </div>
-            </div>
-        </p>
-        <audio autoplay loop id="playAudio">
-                                    <source src="https://sin1.contabostorage.com/2db3bf1e16cd47a08843bb881e39cce7:indoinvite-staging/indoinvite-staging/indoinvite-staging/nikah/upload/music/1741747192.mp3">
-                        </audio>
-                <audio autoplay  id="playAudioS">
-                    </audio>
-
-    </div>
-</div>
-                </div>
-            </footer>
+            </div>                      
         </div>
 
                 <style>
@@ -3268,125 +3183,6 @@ color: #ae814c;
 </style>
 
 
-<div class="fix-menu bg-primary" id="menu_id" style="max-width: 500px; ">
-        <div>
-
-        <div class="flex justify-around grid-container cursor-pointer">
-
-
-            
-            
-            
-
-            
-
-
-            
-            <div id="icon1" class="item1" onclick="scrollToHome()">
-                <div style="width: 100%;">
-                    <div style="
-                    height: 30px;
-                    width: 30px;
-                    border-radius: 3px; margin: 0 auto;">
-                        <img style="
-                        width: 20px;
-                        padding-top: 4px;
-                    " src="/nikah/home.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            
-
-
-            
-            <div id="icon2" class="item1" onclick="scrollToUcapan()">
-                <div style="width: 100%;">
-                    <div style="
-                    height: 30px;
-                    width: 30px;
-                    border-radius: 3px; margin: 0 auto;">
-                        <img id="menu-kehadiran-bawah" style="
-                        width: 25px;
-                        padding-top: 2px
-                    " src="/nikah/people.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            
-
-
-
-            
-                        <div id="icon3" class="item1" onclick="scrollToGalery()">
-                <div style="width: 100%;">
-                    <div style="
-                    height: 30px;
-                    width: 30px;
-                    border-radius: 3px; margin: 0 auto;">
-                        <img style="
-                       width: 22px;
-                        padding-top: 4px;
-                    " src="/nikah/picture.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            
-            
-
-
-
-            
-            <div id="icon4" class="item1" onclick="scrollToMap()">
-                <div style="width: 100%;">
-                    <div style="
-                    height: 30px;
-                    width: 30px;
-                    border-radius: 3px; margin: 0 auto;">
-                        <img style="
-                            width: 20px;
-                            padding-top: 4px;
-                    " src="/nikah/map.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            
-
-
-
-            
-                        
-
-
-
-            
-                        
-
-
-
-            
-            <div id="icon7" class="item1">
-                <div style="width: 100%;">
-                    <div id="volume" style="background-color: #4970ea;
-                    height: 30px;
-                    width: 30px;
-                    border-radius: 3px; margin: 0 auto;">
-                        <img style="
-                        width: 25px;
-                            padding-top: 4px;
-                            padding-left: 2px;
-                    " src="/nikah/sound.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            
-
-            
-
-        
-        </div>
-    </div>
-</div>
-                        <!-- jQuery -->
 <script src="https://indoinvite.com/nikah/js/jquery.min.js"></script>
 <!-- jQuery Easing -->
 <script src="https://indoinvite.com/nikah/js/jquery.easing.1.3.js"></script>
@@ -5128,58 +4924,6 @@ $('#auto_scroll').on('click', function(e) {
             $(window).off("scroll");
         }
     });
-
-    function closeKehadrianModal() {
-        anime({
-            targets: '#kehadiran-modal-body',
-            translateY: 400,
-            opacity: 0,
-            duration: 500,
-            easing: 'easeInOutSine'
-        });
-
-        setTimeout(function() {
-            $("#menu-kehadiran-bawah").css("opacity", 0);
-            $("#menu-kehadiran-bawah").css("transform", "scale(2.5)");
-            anime({
-                targets: '#menu-kehadiran-bawah',
-                scale: 1,
-                opacity: 1,
-                duration: 1000,
-                easing: 'easeInOutSine'
-            });
-        }, 400);
-
-        setTimeout(function() {
-            $('#kehadiran-modal').hide();
-
-        }, 500);
-
-
-
-    }
-
-
-    function openKehadiranModal() {
-        // alert(demoParam)
-        if (contohParam != 1) {
-            if (demoParam == null) {
-                $('#kehadiran-modal').show();
-                // alert('haloo');
-                $("#menu-kehadiran-bawah").css("opacity", 0);
-                anime({
-                    targets: '#kehadiran-modal-body',
-                    translateY: 0,
-                    opacity: 1,
-                    duration: 500,
-                    easing: 'easeInOutSine'
-                });
-            }
-        }
-
-    }
-
-
 
     function closeAmplopModal() {
         anime({
